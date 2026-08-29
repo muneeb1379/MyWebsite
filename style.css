@@ -941,7 +941,7 @@
 
     justify-content: center;
 
-    align-items: stretch;
+    /* align-items: stretch; */
 
     gap: 28px;
 
@@ -1580,7 +1580,7 @@
 /*                       400px AND BELOW                      */
 /* ========================================================= */
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
 
     .new-arrivals {
 
