@@ -5621,13 +5621,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    min-height: 100vh;
-    background: #08090c;
-    color: #ffffff;
-}
-
+/* 
 
 /* =========================
    LOGIN SECTION
@@ -6307,31 +6301,7 @@ html {
 }
 
 
-body {
-    min-height: 100vh;
 
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
-    background:
-        radial-gradient(
-            circle at 80% 10%,
-            rgba(0, 217, 160, 0.045),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 20% 90%,
-            rgba(0, 170, 255, 0.035),
-            transparent 30%
-        ),
-        var(--bg);
-
-    color: var(--text);
-
-    overflow-x: hidden;
-}
 
 
 button,
@@ -8102,7 +8072,7 @@ a {
 .product-info span {
     color: #5e6670;
 
-    font-size: 9px;
+    font-size: 20px;
 }
 
 
