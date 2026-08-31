@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
+
+    <!-- font links -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-gem"></i>
+            </div>
+
+            <h2>Dashboard</h2>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="#" class="nav-link active" id="dashboardLink">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-link" id="productsLink">
+                <i class="fa-solid fa-box"></i>
+                <span>Products</span>
+            </a>
+
+            <a href="#" class="nav-link" id="categoriesLink">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Categories</span>
+            </a>
+
+            <a href="#" class="nav-link" id="ordersLink">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Orders</span>
+
+                <span class="nav-badge">12</span>
+            </a>
+
+            <a href="#" class="nav-link" id="customersLink">
+                <i class="fa-solid fa-users"></i>
+                <span>Customers</span>
+            </a>
+
+
+            <p class="nav-title second-title">OTHERS</p>
+
+            <a href="#" class="nav-link" id="messagesLink">
+                <i class="fa-regular fa-message"></i>
+                <span>Messages</span>
+
+                <span class="message-dot"></span>
+            </a>
+
+            <a href="#" class="nav-link" id="settingsLink">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button
+                class="logout-btn"
+                id="logoutBtn"
+            >
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content" id="mainContent">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <h1 id="pageTitle">Dashboard</h1>
+                    <p>Welcome back, Admin</p>
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search..."
+                    >
+
+                </div>
+
+
+                <!-- Notification -->
+                <button
+                    class="notification-btn"
+                    id="notificationBtn"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        4
+                    </span>
+
+                </button>
+
+
+                <!-- Profile -->
+                <div
+                    class="admin-profile"
+                    id="adminProfile"
+                >
+
+                    <div class="profile-image">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-info">
+                        <h4>Admin</h4>
+                        <span>Administrator</span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down profile-arrow"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="dashboard-container">
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <div class="welcome-banner">
+
+                <div class="welcome-content">
+
+                    <span class="welcome-tag">
+                        <i class="fa-solid fa-sparkles"></i>
+                        ADMIN PANEL
+                    </span>
+
+                    <h2>
+                        Welcome back, Admin
+                    </h2>
+
+                    <p>
+                        Here's what's happening with your store today.
+                    </p>
+
+                </div>
+
+                <div class="welcome-icon">
+                    <i class="fa-solid fa-gem"></i>
+                </div>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <div class="stats-grid">
+
+
+                <!-- Sales -->
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon sales-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <span class="growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12.5%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>Total Sales</p>
+
+                        <h2 id="totalSales">
+                            $24,580
+                        </h2>
+
+                        <span>
+                            Compared to last month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Orders -->
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon orders-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <span class="growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            8.2%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>Total Orders</p>
+
+                        <h2 id="totalOrders">
+                            1,248
+                        </h2>
+
+                        <span>
+                            Compared to last month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Products -->
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon products-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <span class="growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            5.4%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>Total Products</p>
+
+                        <h2 id="totalProducts">
+                            356
+                        </h2>
+
+                        <span>
+                            Active products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Customers -->
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon customers-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <span class="growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            10.1%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>Total Customers</p>
+
+                        <h2 id="totalCustomers">
+                            2,845
+                        </h2>
+
+                        <span>
+                            Registered customers
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ANALYTICS ================= -->
+
+            <div class="analytics-grid">
+
+
+                <!-- Sales Chart -->
+                <div class="dashboard-card sales-chart-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Sales Overview</h3>
+                            <p>Monthly sales performance</p>
+                        </div>
+
+                        <select id="salesFilter">
+                            <option value="7">Last 7 Months</option>
+                            <option value="12">Last 12 Months</option>
+                            <option value="30">Last 30 Days</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart-area" id="salesChart">
+
+                        <div class="chart-y-axis">
+                            <span>$30k</span>
+                            <span>$20k</span>
+                            <span>$10k</span>
+                            <span>$0</span>
+                        </div>
+
+                        <div class="chart-content">
+
+                            <div class="chart-lines">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <div class="chart-bars">
+
+                                <div class="bar" data-value="55">
+                                    <span></span>
+                                    <small>Jan</small>
+                                </div>
+
+                                <div class="bar" data-value="72">
+                                    <span></span>
+                                    <small>Feb</small>
+                                </div>
+
+                                <div class="bar" data-value="48">
+                                    <span></span>
+                                    <small>Mar</small>
+                                </div>
+
+                                <div class="bar" data-value="85">
+                                    <span></span>
+                                    <small>Apr</small>
+                                </div>
+
+                                <div class="bar" data-value="65">
+                                    <span></span>
+                                    <small>May</small>
+                                </div>
+
+                                <div class="bar" data-value="92">
+                                    <span></span>
+                                    <small>Jun</small>
+                                </div>
+
+                                <div class="bar" data-value="78">
+                                    <span></span>
+                                    <small>Jul</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Order Summary -->
+                <div class="dashboard-card order-summary">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Order Summary</h3>
+                            <p>This month's orders</p>
+                        </div>
+
+                        <button id="orderMenuBtn">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="order-circle">
+
+                        <div class="circle-progress">
+
+                            <div class="circle-inner">
+
+                                <strong id="orderPercentage">
+                                    78%
+                                </strong>
+
+                                <span>Completed</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-details">
+
+                        <div>
+                            <span class="legend completed"></span>
+                            <p>Completed</p>
+                            <strong>842</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend pending"></span>
+                            <p>Pending</p>
+                            <strong>286</strong>
+                        </div>
+
+                        <div>
+                            <span class="legend cancelled"></span>
+                            <p>Cancelled</p>
+                            <strong>120</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= BOTTOM GRID ================= -->
+
+            <div class="bottom-grid">
+
+
+                <!-- Recent Orders -->
+                <div class="dashboard-card recent-orders">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Orders</h3>
+                            <p>Latest customer orders</p>
+                        </div>
+
+                        <a href="#" id="viewAllOrders">
+                            View All
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table id="ordersTable">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="ordersTableBody">
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#ORD-1048</strong>
+                                    </td>
+
+                                    <td>
+                                        <div class="customer-cell">
+                                            <div class="customer-avatar">
+                                                A
+                                            </div>
+                                            <span>Ayesha Khan</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Gold Necklace</td>
+
+                                    <td>
+                                        <strong>$249</strong>
+                                    </td>
+
+                                    <td>
+                                        <span class="status completed-status">
+                                            Completed
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#ORD-1047</strong>
+                                    </td>
+
+                                    <td>
+                                        <div class="customer-cell">
+                                            <div class="customer-avatar">
+                                                S
+                                            </div>
+                                            <span>Sarah Ali</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Emerald Ring</td>
+
+                                    <td>
+                                        <strong>$189</strong>
+                                    </td>
+
+                                    <td>
+                                        <span class="status pending-status">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#ORD-1046</strong>
+                                    </td>
+
+                                    <td>
+                                        <div class="customer-cell">
+                                            <div class="customer-avatar">
+                                                M
+                                            </div>
+                                            <span>Maham Noor</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Diamond Earrings</td>
+
+                                    <td>
+                                        <strong>$320</strong>
+                                    </td>
+
+                                    <td>
+                                        <span class="status completed-status">
+                                            Completed
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#ORD-1045</strong>
+                                    </td>
+
+                                    <td>
+                                        <div class="customer-cell">
+                                            <div class="customer-avatar">
+                                                H
+                                            </div>
+                                            <span>Hina Shah</span>
+                                        </div>
+                                    </td>
+
+                                    <td>Silver Bracelet</td>
+
+                                    <td>
+                                        <strong>$145</strong>
+                                    </td>
+
+                                    <td>
+                                        <span class="status cancelled-status">
+                                            Cancelled
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Top Products -->
+                <div class="dashboard-card top-products">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Top Products</h3>
+                            <p>Best selling products</p>
+                        </div>
+
+                        <button id="productMenuBtn">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-list">
+
+
+                        <div class="product-item">
+
+                            <div class="product-image">
+                                <i class="fa-solid fa-ring"></i>
+                            </div>
+
+                            <div class="product-info">
+                                <h4>Royal Gold Ring</h4>
+                                <span>128 sold</span>
+                            </div>
+
+                            <strong>$249</strong>
+
+                        </div>
+
+
+                        <div class="product-item">
+
+                            <div class="product-image">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+
+                            <div class="product-info">
+                                <h4>Emerald Necklace</h4>
+                                <span>96 sold</span>
+                            </div>
+
+                            <strong>$329</strong>
+
+                        </div>
+
+
+                        <div class="product-item">
+
+                            <div class="product-image">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+
+                            <div class="product-info">
+                                <h4>Diamond Earrings</h4>
+                                <span>84 sold</span>
+                            </div>
+
+                            <strong>$189</strong>
+
+                        </div>
+
+
+                        <div class="product-item">
+
+                            <div class="product-image">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+
+                            <div class="product-info">
+                                <h4>Luxury Bracelet</h4>
+                                <span>71 sold</span>
+                            </div>
+
+                            <strong>$159</strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
