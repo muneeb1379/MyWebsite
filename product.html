@@ -1,27 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
 
-    <!-- font links -->
-    <style>
+<title>Product Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+<style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+</style>
 
 </head>
+
 <body>
-    <!-- NAVBAR -->
-        <!-- NAVBAR -->
-    <nav class="navbar">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
 
     <!-- Logo -->
     <div class="logo">
-        <a href="index.html">
-            <img src="./LOGO/ea22d9a0-a76c-4df4-90c5-3d613f8e717d.png" alt="">
+        <a href="./index.html">
+            <img
+                src="./LOGO/ea22d9a0-a76c-4df4-90c5-3d613f8e717d.png"
+                alt="Logo"
+            >
         </a>
     </div>
 
@@ -52,7 +62,7 @@
 
 
         <!-- Cart -->
-        <a href="#" class="cart">
+        <a href="./cart.html" class="cart">
 
             <i class="fa-solid fa-cart-shopping"></i>
 
@@ -76,61 +86,87 @@
 
     </div>
 
-</nav>  <!-- NAVBAR END -->
+</nav>
 
-    <!-- -------------------------------------------- -->
-    <!-- PRODUCTS -->
-    <section class="product-detail-section">
+
+<!-- ================= PRODUCT DETAIL ================= -->
+
+<section class="product-detail-section">
 
     <div class="product-detail-container">
 
-        <!-- LEFT SIDE -->
+
+        <!-- ================= LEFT SIDE ================= -->
 
         <div class="product-gallery">
 
-            <!-- Large Image -->
+
+            <!-- Main Product Image -->
 
             <div class="large-product-image">
 
                 <img
                     id="mainProductImage"
-                    src="./images/earings1.jpg"
-                    alt="Emerald Elegance Ring"
+                    src=""
+                    alt="Product Image"
                 >
 
             </div>
 
 
-            <!-- Small Images -->
+            <!-- Product Thumbnails -->
 
             <div class="product-thumbnails">
 
-                <button class="thumbnail active">
+                <button
+                    type="button"
+                    class="thumbnail active"
+                >
+
                     <img
-                        src="./images/earrings2.jpg"
-                        alt=""
+                        src=""
+                        alt="Product thumbnail"
                     >
+
                 </button>
 
-                <button class="thumbnail">
+
+                <button
+                    type="button"
+                    class="thumbnail"
+                >
+
                     <img
-                        src="./images/earrings3.jpg"
-                        alt=""
+                        src=""
+                        alt="Product thumbnail"
                     >
+
                 </button>
 
-                <button class="thumbnail">
+
+                <button
+                    type="button"
+                    class="thumbnail"
+                >
+
                     <img
-                        src="./images/earrings4.jpg"
-                        alt=""
+                        src=""
+                        alt="Product thumbnail"
                     >
+
                 </button>
 
-                <button class="thumbnail">
+
+                <button
+                    type="button"
+                    class="thumbnail"
+                >
+
                     <img
-                        src="./images/earrings5.jpg"
-                        alt=""
+                        src=""
+                        alt="Product thumbnail"
                     >
+
                 </button>
 
             </div>
@@ -138,17 +174,23 @@
         </div>
 
 
-        <!-- RIGHT SIDE -->
+        <!-- ================= RIGHT SIDE ================= -->
 
         <div class="product-information">
 
-            <span class="product-category">
-                RINGS
+
+            <!-- Category -->
+
+            <span
+                id="productCategory"
+                class="product-category"
+            >
             </span>
 
 
-            <h1>
-                Emerald Elegance Ring
+            <!-- Product Name -->
+
+            <h1 id="productName">
             </h1>
 
 
@@ -156,7 +198,9 @@
 
             <div class="product-rating">
 
-                <span>★★★★★</span>
+                <span>
+                    ★★★★★
+                </span>
 
                 <small>
                     4.9 (24 Reviews)
@@ -167,42 +211,69 @@
 
             <!-- Price -->
 
-            <div class="product-detail-price">
-                $49.99
+            <div
+                id="productPrice"
+                class="product-detail-price"
+            >
             </div>
 
 
             <!-- Description -->
 
-            <p class="product-detail-description">
-
-                A beautifully crafted emerald ring
-                designed to bring elegance and style
-                to every occasion. Perfect for everyday
-                wear and special moments.
-
+            <p
+                id="productDescription"
+                class="product-detail-description"
+            >
             </p>
 
 
-            <!-- Product Info -->
+            <!-- Product Information -->
 
             <div class="product-features">
 
-                <div>
-                    <strong>Material</strong>
-                    <span>Premium Silver</span>
-                </div>
+
+                <!-- Material -->
 
                 <div>
-                    <strong>Stone</strong>
-                    <span>Emerald</span>
+
+                    <strong>
+                        Material
+                    </strong>
+
+                    <span>
+                        Premium Silver
+                    </span>
+
                 </div>
 
+
+                <!-- Stone -->
+
                 <div>
-                    <strong>Availability</strong>
+
+                    <strong>
+                        Stone
+                    </strong>
+
+                    <span>
+                        Emerald
+                    </span>
+
+                </div>
+
+
+                <!-- Availability -->
+
+                <div>
+
+                    <strong>
+                        Availability
+                    </strong>
+
                     <span class="in-stock">
                         In Stock
                     </span>
+
                 </div>
 
             </div>
@@ -217,19 +288,30 @@
 
             <div class="quantity-section">
 
-                <span>Quantity</span>
+                <span>
+                    Quantity
+                </span>
+
 
                 <div class="quantity-box">
 
-                    <button id="minusBtn">
+                    <button
+                        type="button"
+                        id="minusBtn"
+                    >
                         −
                     </button>
+
 
                     <span id="quantity">
                         1
                     </span>
 
-                    <button id="plusBtn">
+
+                    <button
+                        type="button"
+                        id="plusBtn"
+                    >
                         +
                     </button>
 
@@ -238,18 +320,24 @@
             </div>
 
 
-            <!-- Add Cart -->
+            <!-- Add To Cart -->
 
-            <button class="detail-add-cart">
+            <button
+                type="button"
+                class="detail-add-cart"
+                id="addToCartBtn"
+            >
 
-                <span>🛒</span>
+                <span>
+                    🛒
+                </span>
 
                 Add To Cart
 
             </button>
 
 
-            <!-- Extra Info -->
+            <!-- Extra Information -->
 
             <div class="product-extra-info">
 
@@ -272,53 +360,90 @@
     </div>
 
 </section>
-    
 
-    <!-- ---------------------------------------- -->
-     <!-- FOORTER -->
-      <footer class="footer">
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
 
     <div class="footer-container">
 
+
         <!-- Logo -->
+
         <div class="footer-logo">
-            <a href="#">
-                <img src="./LOGO/ea22d9a0-a76c-4df4-90c5-3d613f8e717d.png" alt="">
+
+            <a href="./index.html">
+
+                <img
+                    src="./LOGO/ea22d9a0-a76c-4df4-90c5-3d613f8e717d.png"
+                    alt="Logo"
+                >
+
             </a>
+
 
             <p>
                 Quality products with a modern and premium experience.
             </p>
+
         </div>
 
 
         <!-- Navigation -->
+
         <div class="footer-links">
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
 
-            <a href="./index.html">Home</a>
-            <a href="./product.html">Product</a>
-            <a href="./about.html">About</a>
-            <a href="./contact-us.html">Contact Us</a>
+            <a href="./index.html">
+                Home
+            </a>
+
+            <a href="./product.html">
+                Product
+            </a>
+
+            <a href="./about.html">
+                About
+            </a>
+
+            <a href="./contact-us.html">
+                Contact Us
+            </a>
 
         </div>
 
 
         <!-- Contact -->
+
         <div class="footer-contact">
 
-            <h3>Get In Touch</h3>
+            <h3>
+                Get In Touch
+            </h3>
 
-            <p>📧 Muneebmuneeb497@gamil.com</p>
-            <p>📞 +923189920060</p>
-            <p>📍 Pakistan</p>
+            <p>
+                📧 Muneebmuneeb497@gmail.com
+            </p>
+
+            <p>
+                📞 +923189920060
+            </p>
+
+            <p>
+                📍 Pakistan
+            </p>
 
         </div>
 
     </div>
 
-    <!-- Bottom -->
+
+    <!-- Footer Bottom -->
+
     <div class="footer-bottom">
 
         <p>
@@ -326,8 +451,19 @@
         </p>
 
     </div>
-    </footer>
 
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<!-- Products array must be here first -->
 <script src="app.js"></script>
+
+<!-- Product detail JavaScript -->
+<script src="product-details.js"></script>
+```
+
 </body>
+
 </html>
