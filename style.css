@@ -1645,9 +1645,9 @@ f
 
     .product-card {
 
-        width: 100%;
+        width: 300px;
 
-        max-width: 100%;
+        /* max-width: 100%; */
 
         min-width: 0;
 
